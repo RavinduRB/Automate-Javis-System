@@ -79,12 +79,6 @@ def handle_command(command_text):
     elif "spotify" in command_text:
         open_spotify()
         
-    elif "start voice recognition" in command_text:
-        start_voice_recognition()
-        
-    elif "stop voice recognition" in command_text:
-        stop_voice_recognition()
-        
     elif "open vscode" in command_text:
         open_vscode()
         
@@ -107,6 +101,12 @@ def handle_command(command_text):
     elif "news" in command_text:
         speak("Opening the latest news.")
         webbrowser.open("https://news.google.com")
+        
+    elif "start voice recognition" in command_text:
+        start_voice_recognition()
+        
+    elif "stop voice recognition" in command_text:
+        stop_voice_recognition()
     
     else:
         speak(f"Command not recognized: {command_text}")
